@@ -1,0 +1,88 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    column-gap: 16px;
+}
+.mision{
+    font-size: 1.5em;
+    color: #300505;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 3px red;
+    padding: 4em;
+
+}
+.vision{
+    font-size: 1.5em;
+    color: #310505;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 3px red;
+    padding: 2em;
+}
+.concejo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+    margin-top: 16px;
+}
+.concejo__titulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 16px;
+}
+.alcalde{
+    background-color: aliceblue;
+    color: black;  
+    margin-left: 1em; 
+    text-align: center;
+    border-radius: 20px;
+    border: solid 2px red;
+    grid-area: 1fr;
+}
+h3{
+    font-weight: bold;
+}
+.alcalde img{
+    max-width: 360px;
+}
+.regidores{
+    background-color: aliceblue;
+    color: black;   
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 3em;
+    margin-right: 1em;
+    border-radius: 20px;
+    border: solid 2px red;
+    grid-area: 1fr;
+}
+.regidores li{
+    margin-top: 10px;
+}
+
+@media (max-width: 640px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .mision{
+        margin: 5px 20px;
+    }
+    .vision{
+        margin: 5px 20px;
+    }
+    .concejo{
+        grid-template-columns: 1fr;
+    }
+    .alcalde{
+        margin: 5px 20px;
+    }
+    .regidores{
+        margin: 5px 20px;
+    }
+    
+}

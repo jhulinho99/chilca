@@ -1,0 +1,58 @@
+.historia{
+    font-size: 1em;
+    color: #300505;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    border: solid 3px red;
+    padding: 1em;
+    margin: 10px 20px;
+}
+.geografia{
+    display:grid ;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5%;
+    margin: 20px 10px;
+    background-color: aliceblue;
+    border: solid 0.5px #e73131c5;
+}
+.geografia__info{
+    font-size: 1em;
+    font-family: 'Calibri';
+    border-radius: 20px;
+    padding: 1.5em;
+    margin: 10px 20px;
+    grid-column: span 2;
+}
+.geografia__datos{
+    font-size: 1.5em;
+    font-family: 'Calibri';
+    border-radius: 20px;
+    padding: 1em;
+    margin: 10px 20px;
+}
+.geografia__datos ul{
+    list-style: circle;
+}
+.geografia__img{
+    border-radius: 20px;
+    padding: 1em;
+    margin: 10px 20px;
+}
+.geografia__img img{
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .geografia{
+        grid-template-columns: 1fr;
+    }
+    .geografia__info{
+        grid-column: span 1;
+        position: relative;
+    }
+    .geografia__datos{
+        margin-left: 20px;
+        font-size: 1.125em;
+    }
+}

@@ -1,0 +1,80 @@
+@import url("fontello.css");
+
+.menu-principal{
+    background-color: #e7050d;
+    font-size: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 3.5rem;
+	padding: 0.5rem;
+}
+.menu-principal__escudo{
+	width: 15%;
+	height: 100px;
+	background: linear-gradient(#420606,#ff0101, #420606);
+	border-radius: 1em;
+	box-shadow: 7px 10px 10px black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 0.5em;
+}
+.menu-principal__opciones{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0.25em;
+    font-size: 1.5em;
+}
+.menu-principal__opciones li{
+    padding: 0.5rem;
+    color: #ffffff;
+    
+}
+
+.menu-principal__opciones li a:hover{
+    border-bottom: 1.75px solid white;
+    background-color: #ffffff6c;
+    transition: all .3s;
+}
+
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    right: 1.5em;
+    top: 1em;
+    color: white;
+    max-height: 3em;
+}
+
+@media(max-width: 840px) {
+    .menu-btn{
+        right: 3em;
+    }
+    .menu-principal__opciones{
+        display: block;
+        position: absolute; 
+        background: #b0605f;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        opacity: 0.9;
+        transform: translateX(-300px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .menu-principal__opciones li{
+		padding: 20px;
+		border-bottom: #ccc solid 1px;
+        font-size: 16px;
+	}
+
+    .menu-principal__opciones li:hover{
+        border-bottom: 1.75px solid white;
+        background-color: #ffffff6c;
+    }
+    .menu-principal__opciones.show{
+        transform: translateX(0px);
+    }
+}
